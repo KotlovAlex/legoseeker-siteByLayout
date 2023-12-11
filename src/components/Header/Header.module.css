@@ -1,0 +1,297 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 34px;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.menu-button {
+  display: none;
+  top: 35px;
+  right: 30px;
+  cursor: pointer;
+  position: absolute;
+  content: url('../../images/burger-menu.svg');
+  z-index: 1;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  background-color: var(--menu-bg);
+  width: fit-content;
+  padding: 70px 60px 50px 70px;
+  border-bottom-left-radius: 20px;
+  gap: 56px;
+  z-index: 0;
+}
+
+.menu .nav {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 40px;
+}
+
+.menu .nav a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.menu .contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu .vk {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+}
+
+.menu .vk img {
+  width: 1.4rem;
+}
+
+.menu .vk a {
+  font-size: .6rem;
+  color: var(--vk);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.top .vk {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px;
+  color: var(--vk);
+  gap: 14px;
+}
+
+.top .vk a{
+  color: var(--vk);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 0 100px;
+}
+
+.bottom .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: nowrap;
+}
+
+.bottom .nav a {
+  margin-right: 5vw;
+  color: var(--white);
+}
+
+.bottom .nav a:last-child {
+  margin-right: 0;
+}
+
+.searchbar {
+  width: 100%;
+  max-width: 429px;
+  min-width: 95px;
+  display: flex;
+  min-height: 53px;
+  background-color: var(--light-gray);
+  margin: 13px 2px 13px 36px;
+  padding: 0 20px;
+  border-radius: 50px;
+}
+
+.searchbar img {
+  margin-right: 10px;
+}
+
+.searchbar input {
+  color: var(--light-blue);
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.searchbar input:focus-visible {
+  outline: none;
+}
+
+.searchbar input:def {
+  outline: none;
+}
+
+.searchbar input::placeholder {
+  color: var(--light-blue);
+}
+
+.counters {
+  display: flex;
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  margin: auto 0;
+  gap: 4px;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-blue);
+  border-radius: 50%;
+  background-color: var(--white);
+  width: 20px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+  .header {
+    font-size: 0.8rem;
+  }
+
+  .top {
+    margin: 0 2vw;
+  }
+
+  .bottom {
+    padding: 0 2vw;
+  }
+
+  .nav a:last-child {
+    text-wrap: wrap;
+  }
+
+  .bottom .nav a {
+    margin-right: 3.5vw;
+  }
+
+  .searchbar {
+    min-height: 42px;
+    margin-left: 2vw;
+  }
+
+  .searchbar input::placeholder {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .top{
+    margin: 0 30px;
+  }
+
+  .logo {
+    content: url('../../images/logo-640.svg');
+  }
+
+  .counters {
+    gap: 5px;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  #menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
+  #menu-toggle:checked ~ .menu-button-container .menu-button {
+    content: url('../../images/close-menu.svg');
+  }
+
+  .searchbar {
+    max-width: 245px;
+    min-height: 34px;
+    font-size: 10px;
+    margin: 9px 2vw 9px 0;
+  }
+  
+  .searchbar input::placeholder {
+    font-size: .8rem
+  }
+
+  .searchbar img {
+    width: 12px;
+  }
+
+  .bottom {
+    height: 53px;
+    padding: 0 30px;
+  }
+
+  .bottom .nav {
+    display: none;
+  }
+
+  .counter {
+    translate: -3px -2px;
+    font-size: 4px;
+    width: 7px;
+    height: 7px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    height: 25px;
+  }
+
+  .counter {
+    font-size: .4rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 4px;
+  }
+
+  .menu {
+    width: 90vw;
+    padding: 44px 5vw;
+  }
+}
