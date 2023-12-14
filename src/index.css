@@ -5,9 +5,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2, h3, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --dark-blue: #1E4497;
   --light-blue: #6E87BD;
+  --drak-blue-60: #A5B4D5;
   --vk: #2787F5;
   --black: #000;
   --white: #fff;
