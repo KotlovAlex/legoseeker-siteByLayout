@@ -32,7 +32,7 @@
 
 .upper .contacts {
   display: flex;
-  gap: 120px;
+  gap: 7vw;
 }
 
 .upper .contacts .left {
@@ -63,6 +63,7 @@
   color: var(--dark-blue);
   border-radius: 10px;
   padding: 14px 34px;
+  height: fit-content;
 }
 
 .upper .payments h3 {
@@ -72,7 +73,7 @@
 
 .upper .payments .payment-methods {
   display: flex;
-  gap: 11px;
+  gap: .65vw;
   margin-bottom: 5px;
 }
 
@@ -142,4 +143,244 @@
 
 .llc ul li a {
   font-size: 12px;
+}
+
+@media (max-width: 1280px) {
+  .footer {
+    padding: 6vh 2vw;
+  }
+
+  .footer ul {
+    font-size: 12px;
+  }
+
+  .upper .contacts {
+    gap: 3vw;
+  }
+
+  .upper .payments {
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .upper .payments h3 {
+    font-size: .8rem;
+  }
+
+  .upper .payments .payment-methods {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .upper .payments img {
+    height: 12px;
+  }
+
+  .products ul {
+    width: calc(96vw - 35px);
+    height: 13rem;
+  }
+
+  .products ul li {
+    width: 25%;
+  }
+
+  .info {
+    width: calc(96vw - 35px);
+  }
+
+  .info .about {
+    width: 25%;
+  }
+
+  .info .help {
+    width: 50%;
+  }
+
+  .info .help ul {
+    height: 4rem;
+  }
+
+  .remark {
+    font-size: 10px;
+  }
+
+  .llc {
+    font-size: 10px;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .llc ul li a {
+    font-size: 10px;
+  }
+
+
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 40px 30px;
+  }
+
+  .upper .payments {
+    width: fit-content;
+  }
+
+  .upper .payments img {
+    height: 12px;
+    margin-right: 2px;
+  }
+
+  .upper .payments img:last-child {
+    margin-right: 0;
+  }
+
+  .products ul {
+    width: calc(96vw - 35px);
+    height: 20rem;
+  }
+
+  .products ul li {
+    width: 33.333%;
+  }
+
+  .info {
+    width: calc(96vw - 35px);
+  }
+
+  .info .about {
+    width: 33.333%;
+  }
+
+  .info .help {
+    width: 66.666%;
+  }
+
+  .info .help ul {
+    height: 4rem;
+  }
+
+  .remark {
+    font-size: 8px;
+  }
+
+  .llc {
+    font-size: 8px;
+  }
+
+  .llc ul li a {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer h3 {
+    font-size: 12px;
+  }
+
+  .footer ul li a {
+    font-size: 8px;
+    text-wrap: nowrap;
+  }
+
+  .footer ul li {
+    margin-bottom: -3px;
+  }
+
+  .upper .contacts {
+    flex-direction: column;
+  }
+
+  .upper .contacts .left{
+    font-size: 10px;
+  }
+
+  .upper .contacts .left a {
+    font-size: 12px;
+  }
+
+  .info .help ul {
+    height: 3rem;
+  }
+
+  .remark {
+    margin-top: 60px;
+  }
+
+  .llc {
+    align-items: flex-end;
+  }
+
+  .llc ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .llc ul :nth-child(1) {
+    order: 1;
+  }
+  .llc ul :nth-child(2) {
+    order: 3;
+  }
+  .llc ul :nth-child(3) {
+    order: 5;
+  }
+  .llc ul :nth-child(4) {
+    order: 4;
+  }
+  .llc ul :nth-child(5) {
+    order: 2;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer h3 {
+    font-size: 10px;
+  }
+  
+  .footer ul li a {
+    font-size: 7px;
+  }
+
+  .upper .contacts {
+    font-size: 6px;
+    font-weight: 400;
+  }
+
+  .upper .contacts .left a {
+    font-size: 10px;
+  }
+
+  .upper .payments {
+    width: fit-content;
+  }
+
+  .upper .payments h3 {
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+
+  .upper .payments img {
+    height: 9px;
+    margin-right: 2px;
+  }
+
+  .upper .payments img:last-child {
+    margin-right: 0;
+  }
+
+  .products ul {
+    height: 13rem;
+  }
+
+  .products ul li {
+    width: 35%;
+  }
+
+  .remark {
+    margin-top: 20px;
+  }
+
 }

@@ -215,6 +215,10 @@
   .searchbar input::placeholder {
     font-size: 1rem;
   }
+
+  .counters {
+    gap: 1vw;
+  }
 }
 
 @media (max-width: 640px) {
