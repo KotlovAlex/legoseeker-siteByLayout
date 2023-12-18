@@ -27,3 +27,34 @@
 .slider .buttons .button.active {
   width: 36px;
 }
+
+@media (max-width: 1280px) {
+  .slider {
+    padding: 60px 30px;
+  }
+
+  .slider img {
+    max-width: calc(100vw - 60px);
+  }
+}
+
+@media (max-width: 640px) {
+  .slider {
+    padding: 30px 30px;
+  }
+
+  .slider .buttons .button {
+    width: 5px;
+    height: 5px;
+  }
+
+  .slider .buttons .button.active {
+    width: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .slider {
+    padding: 20px 30px;
+  }
+}
