@@ -42,6 +42,7 @@
 }
 
 .upper .contacts .left a {
+  text-wrap: nowrap;
   font-size: 1.2rem;
   color: var(--white);
   text-decoration: none;
@@ -208,7 +209,7 @@
 
   .llc {
     font-size: 10px;
-    gap: 0;
+    gap: 2vw;
     justify-content: space-between;
   }
 
@@ -301,6 +302,14 @@
     font-size: 12px;
   }
 
+  .upper .payments h3 {
+    font-size: .6rem;
+  }
+
+  .upper .payments img {
+    height: .5rem;
+  }
+
   .info .help ul {
     height: 3rem;
   }
@@ -344,13 +353,14 @@
     font-size: 7px;
   }
 
-  .upper .contacts {
-    font-size: 6px;
+  .upper .contacts .hours {
+    font-size: 8px;
     font-weight: 400;
   }
 
   .upper .contacts .left a {
     font-size: 10px;
+    font-weight: 700;
   }
 
   .upper .payments {
