@@ -1,7 +1,29 @@
 .slider {
   padding: 60px 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .slider img {
   max-width: calc(100vw - 200px);
+  margin-bottom: 20px;
+}
+
+.slider .buttons {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.slider .buttons .button {
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: var(--dark-blue);
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.slider .buttons .button.active {
+  width: 36px;
 }
