@@ -383,6 +383,7 @@
 
   .products ul {
     height: 13rem;
+    overflow: hidden;
   }
 
   .products ul li {
