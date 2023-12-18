@@ -192,7 +192,8 @@
   }
 
   .top {
-    margin: 0 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
   }
 
   .bottom {
@@ -223,7 +224,8 @@
 
 @media (max-width: 640px) {
   .top{
-    margin: 0 30px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .logo {
@@ -295,7 +297,7 @@
   }
 
   .menu {
-    width: 90vw;
+    width: calc(90vw - 18px);
     padding: 44px 5vw;
   }
 }
