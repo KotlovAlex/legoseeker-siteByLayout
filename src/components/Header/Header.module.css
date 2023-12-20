@@ -297,7 +297,8 @@
   }
 
   .menu {
-    width: calc(90vw - 18px);
-    padding: 44px 5vw;
+    width: 100vw;
+    padding: 74px 33px 33px 33px;
+    border-bottom-right-radius: 20px;
   }
 }
