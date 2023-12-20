@@ -23,4 +23,7 @@ h1, h2, h3, ul, li {
   --white: #fff;
   --light-gray: #E6EAF4;
   --menu-bg: #F1F1F1;
+  --border-gray: #EEEEEE;
+  --text-gray: #737781;
+  --success-green: #39AD37;
 }

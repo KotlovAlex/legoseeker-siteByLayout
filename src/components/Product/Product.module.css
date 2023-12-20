@@ -1,0 +1,160 @@
+.product-card {
+  padding: 30px 20px 40px 20px;
+  border: 2px solid var(--border-gray);
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.product-card > img {
+  border-radius: 14px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.product-card .prices {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.product-card .prices .current {
+  font-size: 19px;
+}
+
+.product-card .prices .old {
+  margin-left: 10px;
+  color: var(--text-gray);
+  text-decoration: line-through;
+}
+
+.product-card .info {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card .info .stock {
+  color: var(--success-green);
+  font-weight: 400;
+}
+
+.product-card .info .stock::before {
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--success-green);
+  border-radius: 50%;
+  text-align: center;
+  content: url('../../images/check\ mark.svg');
+}
+
+.product-card .info .rate button {
+  background: transparent;
+  border: none;
+  padding: 0 1px;
+}
+
+.product-card .product-name {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.product-card .vendor {
+  margin-bottom: 10px;
+}
+
+.product-card .state {
+  margin-bottom: 40px;
+}
+
+.product-card .button {
+  font-size: 16px;
+  display: block;
+  margin: auto;
+  padding: 20px 50px;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 18px;
+}
+
+@media (max-width: 1280px) {
+  .product-card.hidden1280 {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  
+}
+
+@media (max-width: 320px) {
+  .product-card {
+    padding: 10px;
+    font-size: 7px;
+  }
+
+  .product-card.hidden320 {
+    display: none;
+  }
+
+  .product-card > img {
+    margin-bottom: 10px;
+  }
+
+  .product-card .prices {
+    margin-bottom: 10px;
+  }
+
+  .product-card .prices .current {
+    font-size: 13.5px;
+  }
+  
+  .product-card .prices .old {
+    font-size: 8.5px;
+  }
+
+  .product-card .info {
+    margin-bottom: 10px;
+  }
+  
+  .product-card .info .stock {
+    font-size: 8.5px;
+  }
+  
+  .product-card .info .stock::before {
+    font-size: 14px;
+    transform: scale(.6);
+    margin-right: 0;
+  }
+  
+  .product-card .info .rate button {
+    width: 11px;
+    height: 11px;
+  }
+
+  .product-card .info .rate button img {
+    width: 100%;
+  }
+
+  .product-card .product-name {
+    margin-bottom: 8px;
+    font-size: 8.5px;
+  }
+  
+  .product-card .vendor {
+    margin-bottom: 5px;
+  }
+  
+  .product-card .state {
+    margin-bottom: 16px;
+  }
+  
+  .product-card .button {
+    font-size: 10px;
+    padding: 10px 15px;
+  }
+}
